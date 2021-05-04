@@ -1,0 +1,13 @@
+<a href="#" class="list-group-item justify-content-md-between d-flex align-items-center" (click)="onSelected();">
+    <div class="pull-left">
+        <h4 class="list-group-item-heading">{{recipe.name}}</h4>
+        <p class="list-group-item-text">{{recipe.description}}</p>
+    </div>
+    <span class="pull-right ml-3 mb-3">
+    <img
+    [src]="recipe.imagesPath"
+     alt="{{recipe.name}}"
+     class="img-fluid"
+     style="max-height: 50px;">
+  </span>
+</a>
